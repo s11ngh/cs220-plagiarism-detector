@@ -14,31 +14,31 @@ public class PlagiarismDetector implements IPlagiarismDetector {
 	@Override
 	public int getN() {
 		// TODO Auto-generated method stub
-		return 0;
+		return n;
 	}
 
 	@Override
 	public Collection<String> getFilenames() {
 		// TODO Auto-generated method stub
-		return null;
+		return ngram.keySet();
 	}
 
 	@Override
 	public Collection<String> getNgramsInFile(String filename) {
 		// TODO Auto-generated method stub
-		return null;
+		return ngram.get(filename);
 	}
 
 	@Override
 	public int getNumNgramsInFile(String filename) {
 		// TODO Auto-generated method stub
-		return 0;
+		return ngram.get(filename).size();
 	}
 
 	@Override
 	public Map<String, Map<String, Integer>> getResults() {
 		// TODO Auto-generated method stub
-		return null;
+		return result;
 	}
 
 	@Override
